@@ -14,7 +14,10 @@ import store from './store'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 
+import VueResource from 'vue-resource'
+
 Vue.use(VueMaterial);
+Vue.use(VueResource);
 
 Vue.config.productionTip = false
 
