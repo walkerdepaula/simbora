@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     fetchData() {
-      this.$http.get('usuarios')
+      this.$http.get('user.json')
         .then( (response) => response.json() )
         .then( (data) => {
           Object.keys(data).forEach( (key) => {

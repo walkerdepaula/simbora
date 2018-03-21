@@ -1,29 +1,13 @@
-// Import jQuery
-global.jQuery = require('jquery');
-var $ = global.jQuery;
-window.$ = $;
+import Vue from 'vue';
+import App from './App.vue';
 
-// Slick carrousel
-import 'slick-carousel/slick/slick.css';
+import router from './core/router';
+import store from './core/store';
+import './core/api';
 
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.css'
-
-const BASE_URL = process.env.BASE_URL
-
-import VueResource from 'vue-resource'
-
-Vue.use(VueMaterial);
-Vue.use(VueResource);
-
-Vue.http.options.crossOrigin = true
-Vue.http.options.xhr = {withCredentials: true}
-Vue.http.options.root = BASE_URL + 'api/'
+import './shared/plugins/jquery.js'
+import './shared/plugins/slick-carousel.js'
+import './shared/plugins/material-design.js'
 
 Vue.config.productionTip = false
 

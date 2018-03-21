@@ -59,11 +59,9 @@
 
 <script>
 // @ is an alias to /src
-import Slick from 'vue-slick';
 
 export default {
   name: 'home',
-  components: { Slick },
   data() {
     return {
       slickOptions: {
