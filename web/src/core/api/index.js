@@ -19,10 +19,12 @@ Vue.http.options.progress = function (event) {
 
 Vue.http.interceptors.push((request, next) => {
   NProgress.start()
-  request.headers.set('Authorization', 'Bearer ' + localStorage.getItem('token'))
+  // TODO : Verificar header token
+  // request.headers.set('Authorization', 'Bearer ' + localStorage.getItem('token'))
   next((response) => {
     NProgress.done()
     if (response.status >= 400) {
+      // TODO : importar e configurar o toastr pro projeto
       Vue.toastr({
         message: response.statusText,
         type: 'danger'
