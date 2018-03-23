@@ -1,6 +1,18 @@
 <template>
-  <div class="home">
-    <img src="../assets/logo.png">
+  <div class="about">
+    <h1>This is an about page</h1>
+
+    <ul>
+      <li v-for="user in users" :key="user.name">
+        Email: {{ user.email }}
+        Nome: {{ user.name }}
+      </li>
+    </ul>
+
+
+
+
+
 
     <slick ref="slick" :options="slickOptions">
       <div class="content-test">
@@ -58,10 +70,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
-  name: 'home',
   data() {
     return {
       slickOptions: {
@@ -102,19 +111,4 @@ export default {
   },
 }
 </script>
-
-<style>
-  .content-test {
-    height: 300px;
-    border: 1px solid black;
-  }
-
-  .conteudo {
-    width: 90%;
-    display: block;
-    background: gray;
-    margin: auto;
-    height: 100%;
-  }
-</style>
 
