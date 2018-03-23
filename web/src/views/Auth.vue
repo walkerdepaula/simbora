@@ -1,7 +1,7 @@
 <template>
-  <div class="auth" :style="{ background: styleConfig.color }">
+  <div class="auth" :class="styleConfig">
     <div class="md-layout md-alignment-top-center title-container">
-        <h2>SIMBORA</h2>
+        <img src="../assets/SimBora3.svg" >
     </div>
 
     <div class="md-layout form">
@@ -20,23 +20,15 @@ export default {
   },
   data() {
     return {
-      styleConfig: {},
-      styleConfigOptions: [
-        {color: 'rgba(234, 6, 6, 0.5)', image: null},
-        {color: 'rgba(6, 33, 234, 0.5)', image: null},
-        {color: 'rgba(234, 217, 6, 0.5', image:null}
-      ]
+      styleConfig: null,
+      styleConfigOptions: ['login1', 'login2', 'login3']
     }
   },
   methods: {},
 
   created() {
-    const styleConfigOptions = [
-        {color: 'rgba(234, 6, 6, 0.5)', image: null},
-        {color: 'rgba(6, 33, 234, 0.5)', image: null},
-        {color: 'rgba(234, 217, 6, 0.5', image:null}
-      ]
-    this.styleConfig = styleConfigOptions[Math.floor(Math.random() * styleConfigOptions.length)];
+    this.styleConfig = this.styleConfigOptions[Math.floor(Math.random() * this.styleConfigOptions.length)];
+    console.log(this.styleConfig);
   }
 }
 </script>
@@ -45,9 +37,26 @@ export default {
   .auth {
     height: 100vh;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat; 
+
+    &.login1 {
+      background-image: url(../assets/login1.png);
+    }
+    &.login2 {
+      background-image: url(../assets/login2.png);
+    }
+    &.login3 {
+      background-image: url(../assets/login3.png);
+    }
 
     .title-container {
       height: calc(100% - 35vh);
+
+      img {
+        margin-top: 70px;
+        height: 50px;
+      }
     }
 
     .form {

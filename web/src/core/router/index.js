@@ -1,7 +1,7 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-
-import Auth from '@/views/Auth.vue';
+import Vue from 'vue'
+import Router from 'vue-router'
+import Auth from '@/views/Auth.vue'
+import Register from '@/views/Register.vue'
 import Calendar from '@/views/Calendar.vue';
 
 Vue.use(Router);
@@ -31,6 +31,11 @@ export default new Router({
       path: '/in-progress-events',
       name: 'inProgressEvents',
       component: Calendar
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
     }
   ]
 });
