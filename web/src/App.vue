@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <app-header></app-header>
+    <app-header v-if="appHeaderShow"></app-header>
+
     <router-view/>
 
     <!-- <div id="nav">
@@ -10,11 +11,22 @@
   </div>
 </template>
 
-<<script>
-  import appHeader from '@/shared/modules/header/_components/header.vue'
+<script>
+  import appHeader from '@/shared/modules/header/_components/header.vue';
+
   export default {
     components: {
       appHeader
+    },
+    data() {
+      return {
+        appHeaderShow: true
+      }
+    },
+    watch: {
+      '$route' (to, from) {
+        this.appHeaderShow = to.name !== 'auth'
+      }
     }
   }
 </script>
