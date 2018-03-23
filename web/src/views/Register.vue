@@ -19,16 +19,6 @@ export default {
     }
   },
   methods: {
-    // confirmStep() {
-    //   this.stepLabel = this.step === 1 ? 'Próximo' : 'Entrar';
-    //   console.log(this.$router.history.current.name)
-    //   if(this.step === 1) {
-    //     this.$router.push({name: 'register-step-two'});
-    //     this.step = 2;
-    //   } else {
-    //     console.log('aeho');
-    //   }
-    // }
   },
 
   created() {

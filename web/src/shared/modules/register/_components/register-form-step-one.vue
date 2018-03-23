@@ -37,7 +37,7 @@
       </md-field>
     </div>
     <div class="register-footer md-layout md-alignment-center-center">
-      <md-button type="button" class="smbr-black" @click.prevent="nextStep">Próximo</md-button>
+      <md-button v-if="currentRoute !== 'profile'" type="button" class="smbr-black" @click.prevent="nextStep">Próximo</md-button>
     </div>
   </form>
 
@@ -48,6 +48,7 @@ export default {
   name: 'registerFormStepOne',
   data() {
     return {
+      currentRoute: this.$router.history.current.name,
       places: [],
       user: {
         name: null,
@@ -99,18 +100,18 @@ export default {
     border-bottom: 1px solid #d2d2d2 !important;
   }
 
-  .register-footer {
-    height: 5vh;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
+  // .register-footer {
+  //   height: 5vh;
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   bottom: 0;
 
-    .smbr-black {
-      border: 1px solid black;
-      border-radius: 4px;
-    }
-  }
+  //   .smbr-black {
+  //     border: 1px solid black;
+  //     border-radius: 4px;
+  //   }
+  // }
 
   // .md-select-menu {
   //   background: #fff !important;

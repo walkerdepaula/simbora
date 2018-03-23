@@ -16,7 +16,7 @@
       <md-progress-bar md-mode="determinate" :md-value="amount"></md-progress-bar>
     </div> -->
     <div class="register-footer md-layout md-alignment-center-center">
-      <md-button type="button" class="smbr-black" @click.prevent="enter">Entrar</md-button>
+      <md-button v-if="currentRoute !== 'profile'" type="button" class="smbr-black" @click.prevent="enter">Entrar</md-button>
     </div>
   </form>
 </template>
@@ -26,6 +26,7 @@ export default {
   name: 'registerFormStepTwo',
   data() {
     return {
+      currentRoute: this.$router.history.current.name,
       interests: [],
       amount: 50,
       events: [],
@@ -36,18 +37,16 @@ export default {
     fetchEvents() {
       this.$http.get('events.json').then( (response) => {
         this.events = response.body
-        console.log(this.events)
       });
     },
     getStepOneData() {
       this.user = this.$store.getters.getUser;
-      console.log(this.user)
     },
     enter() {
       this.user.interests = this.interests;
-      console.log(this.user);
     }
   },
+
   created() {
     this.getStepOneData();
     this.fetchEvents();
@@ -97,17 +96,17 @@ export default {
     }
   }
 
-  .register-footer {
-    height: 5vh;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
+  // .register-footer {
+  //   height: 5vh;
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   bottom: 0;
 
     .smbr-black {
       border: 1px solid black;
       border-radius: 4px;
-    }
+    // }
   }
 
   input, .select {
