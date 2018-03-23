@@ -1,0 +1,105 @@
+{
+
+  "inProgressEvents" : [ {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Almoço",
+    "when" : "13/03/2018 13:30",
+    "where" : "Mc Donnals Morumbi"
+  }, {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Jogo",
+    "when" : "13/03/2018 13:30",
+    "where" : "Redspark São Paulo"
+  }, {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Almoço",
+    "when" : "13/03/2018 13:30",
+    "where" : "Mc Donnals Morumbi"
+  } ],
+  "myEvents" : [ {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Almoço",
+    "when" : "13/03/2018 13:30",
+    "where" : "Mc Donnals Morumbi"
+  }, {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Jogo",
+    "when" : "13/03/2018 13:30",
+    "where" : "Redspark São Paulo"
+  }, {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Almoço",
+    "when" : "13/03/2018 13:30",
+    "where" : "Mc Donnals Morumbi"
+  } ],
+  "oldEvents" : [ {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Almoço",
+    "when" : "13/03/2018 13:30",
+    "where" : "Mc Donnals Morumbi"
+  }, {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Jogo",
+    "when" : "13/03/2018 13:30",
+    "where" : "Mc Donnals Morumbi"
+  }, {
+    "companny" : "Redspark São Paulo",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non, voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.",
+    "status" : "Confirmado",
+    "title" : "Almoço",
+    "when" : "13/03/2018 13:30",
+    "where" : "Mc Donnals Morumbi"
+  } ],
+  "places" : [ {
+    "id" : "1",
+    "name" : "SP"
+  }, {
+    "id" : "2",
+    "name" : "Ribeirão"
+  }, {
+    "id" : "3",
+    "name" : "Sesc"
+  }, {
+    "id" : "4",
+    "name" : "BMB"
+  }, {
+    "id" : "5",
+    "name" : "Einstein"
+  } ],
+  "user" : {
+    "password" : "redspark",
+    "user" : "redspark"
+  },
+  "events" : [ {
+    "id" : "1",
+    "name" : "Evento 1"
+  }, {
+    "id" : "2",
+    "name" : "Almoço"
+  }, {
+    "id" : "3",
+    "name" : "Teste"
+  }, {
+    "id" : "4",
+    "name" : "Aloooou"
+  }, {
+    "id" : "5",
+    "name" : "Fifinha"
+  } ],
+}
