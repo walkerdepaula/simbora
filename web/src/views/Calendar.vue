@@ -40,6 +40,5 @@ export default {
   .md-title {
     font-family: 'Oswald', sans-serif;
     font-size: 34px;
-    margin-bottom: 5px;
   }
 </style>
