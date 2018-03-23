@@ -1,7 +1,9 @@
 <template>
-  <md-card class="card-wrapper md-elevation-5" @click.prevent="accessEventInfo">
+  <md-card class="card-wrapper md-elevation-5">
     <md-card-media>
-      <img :src="'https://firebasestorage.googleapis.com/v0/b/hackton-redspark.appspot.com/o/almoco.svg?alt=media&token=c651402c-3d77-4277-984a-ad74b4dde399'">
+      <img
+       @click.prevent="accessEventInfo"
+       src="https://firebasestorage.googleapis.com/v0/b/hackton-redspark.appspot.com/o/almoco.svg?alt=media&token=c651402c-3d77-4277-984a-ad74b4dde399">
     </md-card-media>
 
     <md-card-header>

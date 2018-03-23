@@ -1,11 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Auth from '@/views/Auth.vue'
+
 import Register from '@/views/Register.vue'
 import RegisterFormStepOne from '@/shared/modules/register/_components/register-form-step-one.vue'
 import RegisterFormStepTwo from '@/shared/modules/register/_components/register-form-step-two.vue'
+
 import Calendar from '@/views/Calendar.vue'
 import Profile from '@/views/Profile.vue'
+
+import AppEvent from '@/views/Event.vue'
+import eventCreate from '@/shared/modules/events/_components/event-create.vue'
 
 Vue.use(Router);
 
@@ -51,6 +56,18 @@ export default new Router({
           component: RegisterFormStepTwo
         }
       ],
+    },
+    {
+      path: '/event',
+      name: 'event',
+      component: AppEvent,
+      children: [
+        {
+          path: 'create',
+          name: 'event-create',
+          component: eventCreate
+        }
+      ]
     },
     {
       path: '/profile',
