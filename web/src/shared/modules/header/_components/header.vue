@@ -8,7 +8,13 @@
 </template>
 
 <script>
-    export default {}
+export default {
+  methods: {
+    getBack() {
+      this.$router.go(-1)
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
