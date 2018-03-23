@@ -2,7 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Auth from '@/views/Auth.vue'
 import Register from '@/views/Register.vue'
-import Calendar from '@/views/Calendar.vue';
+import RegisterFormStepOne from '@/shared/modules/register/_components/register-form-step-one.vue'
+import RegisterFormStepTwo from '@/shared/modules/register/_components/register-form-step-two.vue'
+import Calendar from '@/views/Calendar.vue'
 
 Vue.use(Router);
 
@@ -35,7 +37,19 @@ export default new Router({
     {
       path: '/register',
       name: 'register',
-      component: Register
+      component: Register,
+      children: [
+        {
+          path: 'step-one',
+          name: 'register-step-one',
+          component: RegisterFormStepOne
+        },
+        {
+          path: 'step-two',
+          name: 'register-step-two',
+          component: RegisterFormStepTwo
+        }
+      ]
     }
   ]
 });

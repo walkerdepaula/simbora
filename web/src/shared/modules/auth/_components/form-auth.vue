@@ -46,7 +46,7 @@ export default {
       console.log('valida: ', this.userForm);
     },
     register(){
-      this.$router.push('register');
+      this.$router.push({name: 'register-step-one'});
     }
   },
 }
