@@ -4,7 +4,7 @@
       <md-field>
         <label for="email">Email</label>
 
-        <md-input type="email" name="email" id="email" autocomplete="email" />
+        <md-input type="email" :model="userForm.email" name="email" id="email" autocomplete="email" />
 
         <span class="md-error">The email is required</span>
         <span class="md-error">Invalid email</span>
@@ -14,7 +14,7 @@
     <div class="md-layout md-alignment-center-center">
       <md-field>
         <label for="email">Senha</label>
-        <md-input type="email" name="email" id="email" autocomplete="email" />
+        <md-input type="password" :model="userForm.password" name="password" id="password" />
         <span class="md-error">The email is required</span>
         <span class="md-error">Invalid email</span>
       </md-field>
@@ -25,7 +25,7 @@
     </div>
 
     <div class="md-layout md-alignment-center-center">
-      <md-button type="button" class="smbr-black">Quero fazer parte</md-button>
+      <md-button type="button" class="smbr-black" @click.prevent="register">Quero fazer parte</md-button>
     </div>
   </form>
 </template>
@@ -44,6 +44,9 @@ export default {
   methods: {
     validateUser() {
       console.log('valida: ', this.userForm);
+    },
+    register(){
+      this.$router.push('register');
     }
   },
 }
@@ -53,9 +56,6 @@ export default {
   .form-container {
     width: 50%;
     margin: auto;
-    // position: absolute;
-    // bottom: 5vh;
-    // left: 25vw;
   }
   .smbr-void {
     border: 1px solid black;

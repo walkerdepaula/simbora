@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <app-header></app-header>
     <router-view/>
 
     <!-- <div id="nav">
@@ -8,6 +9,15 @@
     </div> -->
   </div>
 </template>
+
+<<script>
+  import appHeader from '@/shared/modules/header/_components/header.vue'
+  export default {
+    components: {
+      appHeader
+    }
+  }
+</script>
 
 <style lang="scss">
   #app {
