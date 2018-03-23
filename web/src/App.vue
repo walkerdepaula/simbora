@@ -21,7 +21,7 @@
 
 <style lang="scss">
   #app {
-    height: 100vh;
+    height: calc(100vh - 5vh);
     position: relative;
   }
 </style>

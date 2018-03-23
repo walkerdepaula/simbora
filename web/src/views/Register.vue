@@ -46,7 +46,7 @@ export default {
 
 <style scoped lang="scss">
   .register {
-    height: 100vh;
+    // height: 100vh;
 
     .register-body {
       height: calc(100% - 15vh);
