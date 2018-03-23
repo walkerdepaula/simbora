@@ -5,6 +5,7 @@ import Register from '@/views/Register.vue'
 import RegisterFormStepOne from '@/shared/modules/register/_components/register-form-step-one.vue'
 import RegisterFormStepTwo from '@/shared/modules/register/_components/register-form-step-two.vue'
 import Calendar from '@/views/Calendar.vue'
+import Profile from '@/views/Profile.vue'
 
 Vue.use(Router);
 
@@ -49,7 +50,12 @@ export default new Router({
           name: 'register-step-two',
           component: RegisterFormStepTwo
         }
-      ]
+      ],
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: Profile,
     }
   ]
 });

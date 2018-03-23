@@ -2,12 +2,12 @@
   <form novalidate class="form-container">
     <div class="user-photo">
       <h2>Quem é você?</h2>
-      <div :class="'photo'" :style="{'background-image': 'url:(@/assets/login1.png)'}"></div>
+      <div :class="'photo'"></div>
     </div>
     <div class="md-layout md-alignment-center-center">
       <md-field>
         <label for="name">Nome</label>
-        <md-input type="text" :model="user.name" name="name" id="name" autocomplete="name" />
+        <md-input type="text" v-model="user.name" name="name" id="name" autocomplete="name" />
         <span class="md-error">The name is required</span>
         <span class="md-error">Invalid name</span>
       </md-field>
@@ -16,7 +16,7 @@
     <div class="md-layout md-alignment-center-center">
       <md-field>
         <label for="email">Email</label>
-        <md-input type="email" :model="user.email" name="email" id="email" autocomplete="email" />
+        <md-input type="email" v-model="user.email" name="email" id="email" autocomplete="email" />
         <span class="md-error">The email is required</span>
         <span class="md-error">Invalid email</span>
       </md-field>
@@ -24,7 +24,7 @@
     <div class="md-layout md-alignment-center-center">
       <md-field>
         <label for="role">Função</label>
-        <md-input type="text" :model="user.role" name="role" id="role" autocomplete="role" />
+        <md-input type="text" v-model="user.role" name="role" id="role" autocomplete="role" />
         <span class="md-error">The role is required</span>
       </md-field>
     </div>
@@ -61,7 +61,6 @@ export default {
     fetchPlaces() {
       this.$http.get('places.json').then( (response) => {
         this.places = response.body
-        console.log(this.places)
       });
     },
 
@@ -85,7 +84,7 @@ export default {
 
     .user-photo {
       .photo {
-        // background-image: url(@/assets/login1.png);
+        background-image: url(../../../../assets/login1.png);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100px;
@@ -102,6 +101,10 @@ export default {
 
   .register-footer {
     height: 5vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
 
     .smbr-black {
       border: 1px solid black;
