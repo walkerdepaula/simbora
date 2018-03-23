@@ -45,7 +45,7 @@ export default {
     validateUser() {
       console.log('valida: ', this.userForm);
     }
-  }
+  },
 }
 </script>
 
@@ -53,9 +53,9 @@ export default {
   .form-container {
     width: 50%;
     margin: auto;
-    position: absolute;
-    bottom: 5vh;
-    left: 25vw;
+    // position: absolute;
+    // bottom: 5vh;
+    // left: 25vw;
   }
   .smbr-void {
     border: 1px solid black;

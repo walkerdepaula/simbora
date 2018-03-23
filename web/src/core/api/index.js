@@ -9,7 +9,8 @@ Vue.use(VueResource);
 
 Vue.http.options.crossOrigin = true
 Vue.http.options.xhr = {withCredentials: true}
-Vue.http.options.root = BASE_URL + 'api/'
+Vue.http.options.root = "https://hackton-redspark.firebaseio.com/"
+// Vue.http.options.root = BASE_URL + 'api/'
 
 Vue.http.options.progress = function (event) {
   if (event.lengthComputable) {
