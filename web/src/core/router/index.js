@@ -10,6 +10,8 @@ import Calendar from '@/views/Calendar.vue'
 import Profile from '@/views/Profile.vue'
 
 import AppEvent from '@/views/Event.vue'
+
+import eventDetail from '@/shared/modules/events/_components/event-detail.vue'
 import eventCreate from '@/shared/modules/events/_components/event-create.vue'
 
 Vue.use(Router);
@@ -66,6 +68,11 @@ export default new Router({
           path: 'create',
           name: 'event-create',
           component: eventCreate
+        },
+        {
+          path: 'detail',
+          name: 'event-detail',
+          component: eventDetail
         }
       ]
     },
@@ -73,6 +80,7 @@ export default new Router({
       path: '/profile',
       name: 'profile',
       component: Profile,
-    }
+    },
+  
   ]
 });
